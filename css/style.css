@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    background-color: #eee;
+    height: auto;
+}
+
+h1{
+    font-weight: 400;
+    font-size: 2,5rem;
+    text-transform: uppercase;
+    margin: 0;
+
+}
+
+h2{
+ font-size: 1.2rem;
+ font-weight: 400;
+ text-transform: capitalize;
+ margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.4),
+    -30px 0px 40px rgba(0, 0, 0, 0.4);
+}
+
+#landing-text {
+    display: flex;
+    flex:0 1 40vw;
+    height: 50vh;
+    justify-content:center;
+    align-items: center;
+    text-align:center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+
+}
+
+#landing-text h2{
+    color: #888;
+
+}
+
+#landing-image{
+    background-image: url(https://source.unsplash.com/HvDsjfgPDFE);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    flex: 0 1 60vw;
+    margin: 0;
+}
+
+.btn{
+    text-decoration: none;
+    border: 1px #ccc solid;
+    padding: 0.5rem 2rem;
+    border-radius: 50px;
+    margin: 1rem 0 0;
+    display: inline-block;
+    color: #333;
+    transition: background 500ms ease ;
+
+
+}
+.btn:hover{
+    background-color: #888;
+}
+
+#header{
+    padding: 1rem;
+    text-transform: capitalize;
+    text-align: center;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+}
+#header h2{
+    border-left: dotted 1px #fff;
+    border-right: dotted 1px #fff;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: inline-block;
+
+}
+
+.caption{
+    text-align: center;
+    padding: 0.5rem;
+}
+footer{
+    text-align: center;
+    padding: 1.5rem;
+    color: #333;
+
+}
+footer h3{
+    font-weight: 500px;
+    font-size: 2rem;
+    margin-bottom: 0;
+    
+}
+footer h4{
+    display: inline-block;
+    color: #fff;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-left: dotted 1px #fff;
+    border-right: dotted 1px #fff;
+    background-color: #333;
+    margin: 0;
+    align-items: center;
+    margin-bottom: 0;
+}
+/* sizes 500px and up*/
+
+@media (min-width:500px) {
+
+    #landing{
+        display: flex;
+       height: 100%;
+    }
+    #landind-image {
+        height: 100vh;
+
+    }
+    #landing-text {
+        height: 100vh;
+    }
+
+}
+
+@media (min-width:700px) {
+
+    .btn{
+        padding: 1rem 3rem;
+    }
+
+}
